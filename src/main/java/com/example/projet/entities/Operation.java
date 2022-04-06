@@ -9,7 +9,7 @@ import java.util.Date;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @Data @NoArgsConstructor @AllArgsConstructor
-public class Operation implements Serializable {
+public abstract class Operation implements Serializable {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long numOp;
     private Date dateOp;
